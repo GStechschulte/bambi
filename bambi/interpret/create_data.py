@@ -230,7 +230,7 @@ def set_default_values(model: Model, data_dict: dict) -> dict:
     # set unspecified covariates to "typical" values
     unique_covariates = get_model_covariates(model)
     for name in unique_covariates:
-        if name not in data_dict:
+        if name not in data_dict and name in model.data.columns:
             x = model.data[name]
             if is_numeric_dtype(x) or is_integer_dtype(x) or is_float_dtype(x):
                 data_dict[name] = np.array([np.mean(x)])

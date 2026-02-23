@@ -11,6 +11,7 @@ from bambi.families import Family, Likelihood, Link
 from bambi.formula import Formula
 from bambi.models import Model
 from bambi.priors import Prior
+from bambi.styles import style
 
 __version__ = version("bambi")
 
@@ -27,6 +28,7 @@ __all__ = [
     "load_data",
     "math",
     "interpret",
+    "style",
 ]
 
 _log = logging.getLogger("bambi")

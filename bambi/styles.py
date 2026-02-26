@@ -1,8 +1,6 @@
 from cycler import cycler
 
 style = {
-    "font.family": "serif",
-    "font.serif": "cmr10",
     "font.size": 10,
     "figure.constrained_layout.use": True,
     "figure.autolayout": True,
